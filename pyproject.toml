@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-bot-engine"
+version = "0.1.0"
+authors = [{ name = "Dominik Reinartz", email = "dominik.reinartz@proton.me" }]
+description = "Makes Discord Bot Development and Testing faster."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["python-dotenv~=1.0.1", "py-cord~=2.6.1"]
+
+[project.optional-dependencies]
+dev = [
+    "flake8>=7.1.1",
+    "isort>=5.13.2",
+    "mypy>=1.13.0",
+    "pytest>=8.3.3",
+    "pytest-cov>=6.0.0",
+]
