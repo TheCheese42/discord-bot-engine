@@ -1,3 +1,9 @@
 # Python3
 __pycache__/
 .venv/
+
+# VSCode
+.vscode/
+
+# Secrets
+.env

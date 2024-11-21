@@ -9,7 +9,7 @@ authors = [{ name = "Dominik Reinartz", email = "dominik.reinartz@proton.me" }]
 description = "Makes Discord Bot Development and Testing faster."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["python-dotenv~=1.0.1", "py-cord~=2.6.1"]
+dependencies = ["python-dotenv~=1.0.1", "py-cord~=2.6.1", "pydantic~=2.9.2"]
 
 [project.optional-dependencies]
 dev = [
@@ -19,3 +19,10 @@ dev = [
     "pytest>=8.3.3",
     "pytest-cov>=6.0.0",
 ]
+
+[tool.mypy]
+exclude = [".venv"]
+strict = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+follow_imports = "skip"
